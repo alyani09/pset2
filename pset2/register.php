@@ -5,12 +5,12 @@
     $email="user";
     $password="password";
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
-        header("Location:success.php");
+        header("Location:registerr.php");
     }
     if(isset($_POST['email']) && isset($_POST['password'])){
         if ($_post['email'] == $email && $_POST['password'] == $password) {
             $_SESSION['loggedin']=true;
-            header("Location: success.php");
+            header("Location: registerr.php");
        }
     }
    ?>
