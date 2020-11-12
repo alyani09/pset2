@@ -8,7 +8,7 @@
 <body>
     <h2>Lab Test 2</h2>
     <?php
-    echo "Welcome to this page, this is your email :";
+    echo ("Welcome to this lab test, here are your email :");
     echo $_POST["email"];
     ?>
 </body>
