@@ -2,6 +2,7 @@
 include_once("dbconnect.php");
 include('navbarmain.php');
 
+$id = $_GET['id'];
 $name = $_GET['name'];
 $email = $_GET['email'];
 $calories = $_GET['calories'];
