@@ -12,7 +12,7 @@ $location = $_GET['location'];
 
 if (isset($_GET['operation'])) {
     try {
-        $sqlupdate = "UPDATE performance SET calories = '$calories', hrv = '$hrv', duration = '$duration', location = '$location' WHERE email = '$email'";
+        $sqlupdate = "UPDATE performance SET calories = '$calories', hrv = '$hrv', duration = '$duration', location = '$location' WHERE email = '$email' AND id = '$id'";
         $conn->exec($sqlupdate);
         echo "<script> alert('Update Success')</script>";
         echo "<script> window.location.replace('mainpage.php?email=".$email."&name=".$name."') </script>;";
